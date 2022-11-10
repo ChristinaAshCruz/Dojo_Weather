@@ -9,6 +9,34 @@
     <title>Dojo Weather</title>
   </head>
   <body>
-    Hello world!
+    <div class="nav_bar">
+      <span class="main_header">DojoWeather</span>
+      <div class="city_links">
+        <a href="#" class="city_links">Burbank</a>
+        <a href="#" class="city_links">Chicago</a>
+        <a href="#" class="city_links">Dallas</a>
+      </div>
+    </div>
+    <div class="content_container">
+      <div class="top_row_header">
+        <span class="weather_location">San Jose</span>
+        <label for="temperatureUnits">show temperature in </label>
+        <select name="temperatureUnits" id="tempUnits">
+          <option value="cecius">C°</option>
+          <option value="fahrenheit">F°</option>
+        </select>
+      </div>
+      <div class="weather_row">
+        <div class="daily_weather">
+          <span class="day">Today</span>
+          <img src="src/some_rain.png" alt="rainy cloud" class="weather_icon" />
+          <div class="temp_row">
+            <span class="temp_max"></span>
+            <span class="temp_min"></span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_row_cookie">1</div>
+    </div>
   </body>
 </html>

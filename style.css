@@ -1,0 +1,8 @@
+* {
+  margin: 0 auto;
+}
+.nav_bar {
+  background-color: #9fc5f8;
+  padding: 15px;
+  display: flex;
+}
