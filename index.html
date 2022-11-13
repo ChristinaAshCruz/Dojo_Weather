@@ -6,37 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Dojo Weather</title>
+    <title>🌤 Dojo Weather</title>
   </head>
   <body>
-    <div class="nav_bar">
-      <span class="main_header">DojoWeather</span>
-      <div class="city_links">
-        <a href="#" class="city_links">Burbank</a>
-        <a href="#" class="city_links">Chicago</a>
-        <a href="#" class="city_links">Dallas</a>
+    <div class="nav_bar_color">
+      <div class="nav_bar">
+        <span class="main_header">DojoWeather</span>
+        <div class="all_city_links">
+          <a href="#" class="city_links">Burbank</a>
+          <a href="#" class="city_links">Chicago</a>
+          <a href="#" class="city_links">Dallas</a>
+        </div>
       </div>
     </div>
-    <div class="content_container">
+    <div id="contentContainer">
       <div class="top_row_header">
         <span class="weather_location">San Jose</span>
-        <label for="tempUnits">show temperature in </label>
-        <select name="temperatureUnits" id="tempUnits">
-          <option value="cecius">C°</option>
-          <option value="fahrenheit">F°</option>
-        </select>
+        <label for="tempUnits" id="changeUnits">show temperature in
+          <select name="temperatureUnits" id="tempUnits">
+            <option value="cecius">C°</option>
+            <option value="fahrenheit">F°</option>
+          </select>
+        </label>
       </div>
+      <hr>
       <div class="weather_row">
         <div class="daily_weather">
           <span class="day">Today</span>
           <img src="src/some_rain.png" alt="rainy cloud" class="weather_icon">
+          <p class="weather_description">some rain</p>
           <div class="temp_row">
-            <span class="temp_max"></span>
-            <span class="temp_min"></span>
+            <span class="temp_max">24°</span>
+            <span class="temp_min">18°</span>
+          </div>
+        </div>
+        <div class="daily_weather">
+          <span class="day">Today</span>
+          <img src="src/some_sun.png" alt="rainy cloud" class="weather_icon">
+          <p class="weather_description">some sun</p>
+          <div class="temp_row">
+            <span class="temp_max">24°</span>
+            <span class="temp_min">18°</span>
+          </div>
+        </div>
+        <div class="daily_weather">
+          <span class="day">Today</span>
+          <img src="src/some_rain.png" alt="rainy cloud" class="weather_icon">
+          <p class="weather_description">some rain</p>
+          <div class="temp_row">
+            <span class="temp_max">24°</span>
+            <span class="temp_min">18°</span>
+          </div>
+        </div>
+        <div class="daily_weather">
+          <span class="day">Today</span>
+          <img src="src/some_rain.png" alt="rainy cloud" class="weather_icon">
+          <p class="weather_description">some rain</p>
+          <div class="temp_row">
+            <span class="temp_max">24°</span>
+            <span class="temp_min">18°</span>
           </div>
         </div>
       </div>
-      <div class="bottom_row_cookie">1</div>
+      <div class="bottom_row_cookie">
+        <img src="src/cookie.png" alt="cookie logo">
+        <div class="bottom_row_cookie_info">
+          <span class="bottom_row_header" id="cookieHeader">Stop! Cookie time</span>
+          <p class="cookie_description">We use cookies (sadly not the edible ones) to personalize content and ads, to provide socail media feature and to analyse our traffic 
+            <a href="#">Read more...</a>
+          </p>
+        </div>
+        <button class="accept_button">I accept</button>
+      </div>
     </div>
   </body>
 </html>

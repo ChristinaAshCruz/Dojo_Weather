@@ -1,12 +1,16 @@
 * {
-  margin: 0 auto;
+  margin: 0 ;
   font-family: sans-serif;
 }
-.nav_bar {
+.nav_bar_color{
   background-color: #9fc5f8;
+}
+.nav_bar {
   padding: 15px 100px;
   display: flex;
   align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .main_header{
@@ -16,12 +20,85 @@
 }
 
 .city_links{
-    margin: 0px 15px;
+    margin-left: 15px;
     text-decoration: none;
     color: white;
     font-size: 15pt;
 }
 
-.content_container{
-    margin: 25px 100px;
+#contentContainer{
+    margin: 25px auto;
+    max-width: 900px;
+}
+/* top row header */
+.top_row_header{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.weather_location{
+  font-size: 24pt;
+  font-weight: bold;
+}
+/* daily weather row */
+.weather_row{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.daily_weather{
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  /* margin: 0px 10px; */
+  height: 300px;
+  /* width: ; */
+}
+.day{
+  color: black;
+  font-size: 20pt;
+}
+.weather_icon{
+  border-radius: 50%;
+  max-height:150px;
+}
+.temp_row{
+  margin-top: 10px;
+  font-size: 15pt;
+}
+.temp_max{
+  color: red;
+  margin: 10px;
+}
+.temp_min{
+  color: blue;
+  margin: 10px;
+}
+
+/* cookie time row */
+.bottom_row_cookie{
+  display: flex;
+  background-color: #EEEEEE;
+  border: 3px solid black;
+  padding: 15px;
+  align-items: center;
+}
+.bottom_row_cookie img{
+  margin-right: 10px;
+}
+.bottom_row_header{
+  font-size: 15pt;
+  font-weight: bold;
+}
+.bottom_row_cookie_info{
+  flex: 5;
+  margin: 0px 15px;
+}
+.accept_button{
+  flex: 1;
+  padding: 5px;
 }
