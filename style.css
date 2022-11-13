@@ -25,6 +25,12 @@
     color: white;
     font-size: 15pt;
 }
+.city_links:hover{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #6f9bd6;
+    font-size: 15pt;
+}
 
 #contentContainer{
     margin: 25px auto;
@@ -107,6 +113,14 @@
   padding: 5px;
   font-size: 12pt;
   background-color:#9FC5F8;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+}
+.accept_button:hover{
+  flex: 1;
+  padding: 5px;
+  font-size: 12pt;
+  background-color:#6a97d1;
   border: 2px solid black;
   box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
 }
