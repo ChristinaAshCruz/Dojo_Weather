@@ -96,6 +96,9 @@
   border: 3px solid black;
   padding: 20px;
   align-items: center;
+  max-width: 850px;
+  text-align: center;
+  position: fixed;
 }
 .bottom_row_cookie img{
   margin-right: 10px;
