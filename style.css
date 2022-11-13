@@ -41,6 +41,10 @@
   font-size: 24pt;
   font-weight: bold;
 }
+#tempUnits{
+  padding: 5px;
+  margin-left: 5px;
+}
 /* daily weather row */
 .weather_row{
   margin: 20px 0px;
@@ -72,11 +76,11 @@
 }
 .temp_max{
   color: red;
-  margin: 10px;
+  margin: 20px;
 }
 .temp_min{
   color: blue;
-  margin: 10px;
+  margin: 20px;
 }
 
 /* cookie time row */
@@ -84,7 +88,7 @@
   display: flex;
   background-color: #EEEEEE;
   border: 3px solid black;
-  padding: 15px;
+  padding: 20px;
   align-items: center;
 }
 .bottom_row_cookie img{
@@ -96,9 +100,13 @@
 }
 .bottom_row_cookie_info{
   flex: 5;
-  margin: 0px 15px;
+  margin: 0px 30px;
 }
 .accept_button{
   flex: 1;
   padding: 5px;
+  font-size: 12pt;
+  background-color:#9FC5F8;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
 }
