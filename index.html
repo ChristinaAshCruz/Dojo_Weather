@@ -13,18 +13,23 @@
       <div class="nav_bar">
         <span class="main_header">DojoWeather</span>
         <div class="all_city_links">
-          <a href="#" class="city_links">Burbank</a>
-          <a href="#" class="city_links">Chicago</a>
-          <a href="#" class="city_links">Dallas</a>
+          <a href="#" class="city_links" onclick="cityClickAlert()">Burbank</a>
+          <a href="#" class="city_links" onclick="cityClickAlert()">Chicago</a>
+          <a href="#" class="city_links" onclick="cityClickAlert()">Dallas</a>
         </div>
       </div>
     </div>
     <div id="contentContainer">
       <div class="top_row_header">
         <span class="weather_location">San Jose</span>
-        <label for="tempUnits" id="changeUnits">show temperature in  
-          <select name="temperatureUnits" id="tempUnits">
-            <option value="cecius">C°</option>
+        <label for="tempUnits" id="changeUnits"
+          >show temperature in
+          <select
+            name="temperatureUnits"
+            id="tempUnits"
+            onchange="convertTemp(this)"
+          >
+            <option value="celcius">C°</option>
             <option value="fahrenheit">F°</option>
           </select>
         </label>
@@ -36,8 +41,8 @@
           <img src="src/some_rain.png" alt="rainy cloud" class="weather_icon">
           <p class="weather_description">some rain</p>
           <div class="temp_row">
-            <span class="temp_max">24°</span>
-            <span class="temp_min">18°</span>
+            <span class="temp_max"> <span id="temp1">24</span>°</span>
+            <span class="temp_min"> <span id="temp2">18</span>°</span>
           </div>
         </div>
         <div class="daily_weather">
@@ -45,17 +50,21 @@
           <img src="src/some_sun.png" alt="rainy cloud" class="weather_icon">
           <p class="weather_description">some sun</p>
           <div class="temp_row">
-            <span class="temp_max">27°</span>
-            <span class="temp_min">19°</span>
+            <span class="temp_max"> <span id="temp3">27</span>°</span>
+            <span class="temp_min"> <span id="temp4">19</span>°</span>
           </div>
         </div>
         <div class="daily_weather">
           <span class="day">Friday</span>
-          <img src="src/some_clouds.png" alt="rainy cloud" class="weather_icon">
+          <img
+            src="src/some_clouds.png"
+            alt="rainy cloud"
+            class="weather_icon"
+          >
           <p class="weather_description">some clouds</p>
           <div class="temp_row">
-            <span class="temp_max">21°</span>
-            <span class="temp_min">16°</span>
+            <span class="temp_max"> <span id="temp5">21</span>°</span>
+            <span class="temp_min"> <span id="temp6">16</span>°</span>
           </div>
         </div>
         <div class="daily_weather">
@@ -63,20 +72,33 @@
           <img src="src/some_sun.png" alt="rainy cloud" class="weather_icon">
           <p class="weather_description">some sun</p>
           <div class="temp_row">
-            <span class="temp_max">24°</span>
-            <span class="temp_min">18°</span>
+            <span class="temp_max">
+              <span id="temp7">24</span>
+              °</span
+            >
+            <span class="temp_min"> <span id="temp8">18</span>°</span>
           </div>
         </div>
       </div>
-      <div class="bottom_row_cookie">
+      <div class="bottom_row_cookie" id="cookieTimeRow">
         <img src="src/cookie.png" alt="cookie logo">
         <div class="bottom_row_cookie_info">
-          <span class="bottom_row_header" id="cookieHeader">Stop! Cookie time</span>
-          <p class="cookie_description">We use cookies (sadly not the edible ones) to personalize content and ads, to provide socail media feature and to analyse our traffic 
+          <span class="bottom_row_header" id="cookieHeader"
+            >Stop! Cookie time</span
+          >
+          <p class="cookie_description">
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide socail media feature and to analyse our traffic
             <a href="#">Read more...</a>
           </p>
         </div>
-        <button class="accept_button">I accept</button>
+        <button
+          class="accept_button"
+          id="acceptButton"
+          onclick="removeCookieTimeRow(cookieTimeRow)"
+        >
+          I accept
+        </button>
       </div>
     </div>
   </body>
